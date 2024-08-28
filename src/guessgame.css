@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #36213E;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.card{
+    margin-top: 250px;
+    background-color: #8AC6D0;
+    border: none;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+h1{
+    color:#375a85;
+    position: absolute;
+    top: 10px;
+    font-size: 30px;
+    font-style: oblique;
+} 
+.int{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+}
+.ch{
+    padding: 10px 7px;
+    border: none;
+    border-radius: 10px;
+    background-color: #375a85;
+    color: azure;
+    cursor: pointer;
+}
+h6{
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+}
+p{
+    color: black;
+    position: absolute;
+    top: 180px;
+    
+}
