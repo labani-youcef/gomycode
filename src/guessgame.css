@@ -1,56 +1,60 @@
-*{
+body {
     margin: 0;
-padding: 0;
-}
-body{
-    height: 100vh;
-    width: 100%;
-    background-color: #36213E;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.card{
-    margin-top: 250px;
-    background-color: #8AC6D0;
-    border: none;
-    border-radius: 10px;
-    height: 300px;
-    width: 500px;
+    padding: 0;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
+    height: 100vh;
+    background-color: #00ADEF;
 }
-h1{
-    color:#375a85;
-    position: absolute;
-    top: 10px;
-    font-size: 30px;
-    font-style: oblique;
-} 
-.int{
-    padding: 10px 10px;
-    border: none;
-    border-radius: 10px;
+
+.container {
+    text-align: center;
 }
-.ch{
-    padding: 10px 7px;
-    border: none;
+
+.game-box {
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #375a85;
-    color: azure;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
-h6{
-    font-size: 30px;
-    position: absolute;
-    top: 200px;
+
+button:hover {
+    background-color: #0056b3;
 }
-p{
-    color: black;
-    position: absolute;
-    top: 180px;
-    
+.gap{
+    display: flex;
+    gap: 10px;
 }
