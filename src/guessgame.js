@@ -23,7 +23,7 @@ function checkgess() {
         console.log("Your guess is too high!");
         document.querySelector("p").textContent = "Your guess is too high!";
     }
-
+      
     chances--;
     document.querySelector("span").textContent = chances;  
 

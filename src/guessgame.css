@@ -14,7 +14,7 @@ body {
 }
 
 .game-box {
-    background-color: white;
+    background-color: black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,3 +58,37 @@ button:hover {
     display: flex;
     gap: 10px;
 }
+
+.link{
+    position: fixed;
+    top: 0;
+    right: 0;  
+    padding: 1rem;
+    z-index: 1000;
+
+}
+.link ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.link ul li {
+    margin-left: 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.link ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link ul li:hover {
+    color: #007bff;
+}
+
+body {
+  font-family: 'Cardo', serif;
+}
+

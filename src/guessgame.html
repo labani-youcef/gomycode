@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="guessgame.css" />
   </head>
   <body>
-    <nav class="card">
-      <h1>guess number from 1 to 10</h1>
-      <nav class="inpt">
-     
-          <input  class="int" type="number" min="1" max="100" />
-         <button   onclick="checkgess ()" class="ch">check</button>
+    <div>
+      <nav class="link">
+       <ul>
+        <a href="index.html"><li id="tt">home</li></a>
+        <a href="guessgame.html"><li id="t"> guess game</li></a>
+          <a href="login.html"><li id="t">login</li></a>
+          <li id="t"><i class='bx bx-basket'></i></li>
+          <li id="t"><i class='bx bx-menu'></i></li>
+       </ul>
       </nav>
-      <p></p>
-      <h6>you have <span>8</span> chances</h6>
-    </nav>
+      <nav class="card">
+        <h1>guess number from 1 to 10</h1>
+        <nav class="inpt">
+       
+            <input  class="int" type="number" min="1" max="100" />
+           <button   onclick="checkgess ()" class="ch">check</button>
+        </nav>
+        <p></p>
+        <h6>you have <span>8</span> chances</h6>
+      </nav>
+    </div>
+    
 </body>
 <script src="./guessgame.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
