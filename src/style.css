@@ -61,14 +61,3 @@ width: 100px;
 height: auto;
 border-radius: 50%;
 }
-
-#game{
-    
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 150px; /* Ajustez la largeur selon vos besoins */
-        height: auto; /* Conserve les proportions de l'image */
-        margin: 0;
-        height: 100%;
-    }

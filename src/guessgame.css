@@ -92,3 +92,10 @@ body {
   font-family: 'Cardo', serif;
 }
 
+.card {
+    border: 2px solid black; /* Vous pouvez personnaliser l'épaisseur, la couleur, et le style de la bordure */
+    padding: 20px; /* Ajoute de l'espace à l'intérieur de la bordure */
+    border-radius: 10px; /* Ajoute des coins arrondis à la bordure */
+    background-color: #f9f9f9; /* Change la couleur de fond de la carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet de profondeur */
+}
