@@ -1,5 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
+
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -134,7 +140,7 @@ header nav a {
     margin-bottom: 20px;
 }
 
-/* Style for table headers */
+
 #cart-items th {
     padding: 10px;
     background-color: #333;
@@ -142,14 +148,14 @@ header nav a {
     text-align: left;
 }
 
-/* Style for table rows */
+
 #cart-items td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
 }
 
-/* Style for the total price section */
+
 #cart .total-price {
     font-size: 18px;
     font-weight: bold;
@@ -157,7 +163,7 @@ header nav a {
     margin-top: 20px;
 }
 
-/* Style for the checkout button */
+
 #cart button {
     display: block;
     width: 100%;
@@ -175,6 +181,9 @@ header nav a {
     background-color: #218838;
 }
 
-/* Style for currency selector */
-
-
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
