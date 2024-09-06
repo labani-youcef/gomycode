@@ -53,6 +53,7 @@ header nav a {
 .product img {
     width: 100%;
     height: auto;
+    max-width: 90%;
 }
 
 .product h3 {
@@ -75,3 +76,105 @@ header nav a {
     color: #777;
     margin-left: 10px;
 }
+.product{
+    
+        flex: 1 1 calc(33.333% - 150px); /* Adjust 33.333% for three products per line */
+        box-sizing: border-box;
+        margin: 10px;
+        text-align: center;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+.cart {
+    margin: 20px;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+#cart{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the cart title */
+#cart h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style for the table */
+#cart-items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style for table headers */
+#cart-items th {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: left;
+}
+
+/* Style for table rows */
+#cart-items td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Style for the total price section */
+#cart .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Style for the checkout button */
+#cart button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart button:hover {
+    background-color: #218838;
+}
+
+/* Style for currency selector */
+
+
