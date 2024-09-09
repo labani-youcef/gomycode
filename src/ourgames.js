@@ -69,6 +69,23 @@ document.getElementById('currency-selector').addEventListener('change', (event) 
     displayCart(); // Mettre à jour l'affichage du panier
 });
 
+
+
+
+
+
 document.getElementById('checkout').addEventListener('click', () => {
     alert('Checkout is not implemented yet!');
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // Fonction pour défiler vers le haut
+    document.getElementById('scrollToTop').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Fonction pour défiler vers le bas
+    document.getElementById('scrollToBottom').addEventListener('click', () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+});
+
