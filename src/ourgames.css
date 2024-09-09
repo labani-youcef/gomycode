@@ -187,3 +187,32 @@ header nav a {
     align-items: center;
     gap: 20px;
 }
+/* Styles pour les boutons de défilement */
+#scrollToTop, #scrollToBottom {
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#scrollToTop {
+    bottom: 80px;
+}
+
+#scrollToBottom {
+    bottom: 20px;
+}
+
+#scrollToTop:hover, #scrollToBottom:hover {
+    background-color: #555;
+}
