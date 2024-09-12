@@ -11,13 +11,57 @@ body {
     padding: 0;
 }
 
+.navbar-container {
+    position: relative;
+    width: 100%;
+}
+
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 15px; 
+    display: flex;
+    list-style: none; 
+    gap: 20px; 
+    padding: 15px 0; 
+    background-color: transparent; 
+}
+
+.navbar li {
+    list-style: none; 
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #2C3E50; 
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #E74C3C; 
+}
+
+body {
+    margin: 0; 
+    }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+    }
+}
 header {
     background-color: #f8f8f8;
     padding: 10px 20px;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
 }
+
 
 header input {
     padding: 10px;
@@ -84,7 +128,7 @@ header nav a {
 }
 .product{
     
-        flex: 1 1 calc(33.333% - 150px); /* Adjust 33.333% for three products per line */
+        flex: 1 1 calc(33.333% - 150px); 
         box-sizing: border-box;
         margin: 10px;
         text-align: center;

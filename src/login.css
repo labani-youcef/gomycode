@@ -27,25 +27,42 @@ body {
     z-index: 1000;
 }
 
-.link ul {
-    list-style: none;
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 15px; /* Positionner la barre de navigation en haut à droite avec un peu de marge */
     display: flex;
-    align-items: center;
+    list-style: none; /* Enlever les puces de la liste */
+    gap: 20px; /* Espacement entre les liens */
+    padding: 15px 0; /* Espacement vertical */
+    background-color: transparent; /* La barre est transparente */
 }
 
-.link ul li {
-    margin-left: 1rem;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+.navbar li {
+    list-style: none; /* Enlever les puces de la liste */
 }
 
-.link ul li a {
+.navbar li a {
     text-decoration: none;
-    color: inherit;
+    color: #2C3E50; /* Couleur du texte */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Transition douce lors du survol */
 }
 
-.link ul li:hover {
-    color: #007bff;
+.navbar li a:hover {
+    color: #E74C3C; /* Changer la couleur au survol */
+}
+
+body {
+    margin: 0; /* Enlever les marges du body */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+    }
 }
 
 /* Style pour le conteneur de connexion */

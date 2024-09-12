@@ -8,17 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href='https://unpkg.com/boxicons@.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "8DLvnQt3ecyxfCZXB",
+      });
+   })();
+</script>
 
 </head>
 <body>
 
-    <div class="link">
-        <ul>
+    <div class="navbar-container">
+        <div class="logo">
+          
+        </div>
+        <ul class="navbar">
             <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="ourgames.html">our games</a></li>
-                <a href="shopingcard.html"><li><i class='bx bx-basket'></i></li></a> 
-                <li><i class='bx bx-menu'></i></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="ourgames.html">Our Games</a></li>
+            <li id="t"><i class='bx bx-menu'></i></li>
+
         </ul>
     </div>
     <div class="login-container">
@@ -40,7 +53,7 @@
                 <label for="phone">Numéro de téléphone</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
-            <button type="submit">Se connecter</button>
+            <button onclick="sendmail" type="submit">Se connecter</button> 
         </form>
     </div>
 </body>

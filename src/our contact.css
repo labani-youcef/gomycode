@@ -1,0 +1,132 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+.navbar-container {
+    position: relative;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px; 
+}
+
+.logo img {
+    max-height: 60px; 
+    border-radius: 50%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 15px; 
+    display: flex;
+    list-style: none; 
+    gap: 20px;
+    padding: 15px 0; 
+    background-color: transparent; 
+}
+
+.navbar li {
+    list-style: none; 
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #2C3E50; 
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease; 
+}
+
+.navbar li a:hover {
+    color: #E74C3C;
+}
+
+body {
+    margin: 0; 
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+    }
+}
+
+
+
+/* Page de contact */
+.contact-page {
+    padding: 80px 20px 20px; /* Padding en haut pour compenser la navbar fixe */
+}
+
+.contact-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #e53935;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.comment-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.comment-form h2 {
+    margin-top: 0;
+}
+
+.comment-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    background-color: #e53935;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.comment-form button:hover {
+    background-color: #c62828;
+}

