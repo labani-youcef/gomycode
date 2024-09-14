@@ -1,4 +1,4 @@
-// Attendre que le DOM soit entièrement chargé
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     

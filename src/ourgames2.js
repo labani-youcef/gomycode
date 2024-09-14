@@ -1,6 +1,6 @@
 let cart = [];
-let currency = 'DA'; // Par défaut en Dinar Algérien
-const conversionRate = 200; // 1 Dollar = 200 DA
+let currency = 'DA'; 
+const conversionRate = 200; 
 
 document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', () => {
@@ -12,7 +12,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
     });
 });
 
-// Fonction pour ajouter des articles au panier
+
 function addToCart(name, price) {
     for (let i = 0; i < cart.length; i++) {
         if (cart[i].name === name) {
@@ -24,7 +24,7 @@ function addToCart(name, price) {
     cart.push({ name: name, price: price, quantity: 1 });
 }
 
-// Fonction pour afficher le panier
+
 function displayCart() {
     const cartItems = document.getElementById('cart-items');
     cartItems.innerHTML = `
@@ -58,35 +58,20 @@ function displayCart() {
     document.getElementById('total-price').textContent = currency === 'DA' ? totalPrice : convertToDollar(totalPrice);
 }
 
-// Fonction de conversion en dollars
+
 function convertToDollar(dinars) {
-    return (dinars / conversionRate).toFixed(2); // Convertir et limiter à 2 décimales
+    return (dinars / conversionRate).toFixed(2); 
 }
 
 // Changer la devise
 document.getElementById('currency-selector').addEventListener('change', (event) => {
-    currency = event.target.value; // Mettre à jour la devise sélectionnée
-    displayCart(); // Mettre à jour l'affichage du panier
+    currency = event.target.value; 
+    displayCart(); 
 });
-
-
-
-
-
 
 document.getElementById('checkout').addEventListener('click', () => {
     alert('Checkout is not implemented yet!');
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Fonction pour défiler vers le haut
-    document.getElementById('scrollToTop').addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
 
-    // Fonction pour défiler vers le bas
-    document.getElementById('scrollToBottom').addEventListener('click', () => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    });
-});
 

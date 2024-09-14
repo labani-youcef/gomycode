@@ -10,9 +10,9 @@ body {
     color: #333;
 }
 
-/* En-tête et barre de navigation */
+
 header {
-    background-color: transparent; /* Suppression de la barre noire */
+    background-color: transparent;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -20,63 +20,51 @@ header {
     position: absolute;
     width: 100%;
     top: 0;
+    z-index: 100;
 }
 
 
 
-
-
-.navbar-container {
-    position: relative;
-    width: 100%;
-}
-
-.logo {
-    position: absolute;
-    top: 15px;
-    left: 15px; /* Positionner le logo en haut à gauche avec un peu de marge */
-}
-
-.logo img {
-    max-height: 60px; 
-    border-radius: 50%;
+body {
+    margin: 0; 
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 15px; /* Positionner la barre de navigation en haut à droite avec un peu de marge */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
     display: flex;
-    list-style: none; /* Enlever les puces de la liste */
-    gap: 20px; /* Espacement entre les liens */
-    padding: 15px 0; /* Espacement vertical */
-    background-color: transparent; /* La barre est transparente */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar li {
-    list-style: none; /* Enlever les puces de la liste */
+.navbar .logo {
+    height: 40px;
+    margin-right: auto; 
 }
 
-.navbar li a {
+.navbar .nav-links {
+    margin-left: auto; 
+}
+
+.navbar a {
+    color: white;
     text-decoration: none;
-    color: #2C3E50; /* Couleur du texte */
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: color 0.3s ease; /* Transition douce lors du survol */
+    margin: 0 15px;
+    font-size: 18px;
 }
 
-.navbar li a:hover {
-    color: #E74C3C; /* Changer la couleur au survol */
+.navbar a:hover {
+    text-decoration: underline;
 }
 
-body {
-    margin: 0; /* Enlever les marges du body */
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; 
-    }
+.content {
+    padding-top: 60px; 
 }
 
 

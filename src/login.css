@@ -29,40 +29,37 @@ body {
 
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 15px; /* Positionner la barre de navigation en haut à droite avec un peu de marge */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
     display: flex;
-    list-style: none; /* Enlever les puces de la liste */
-    gap: 20px; /* Espacement entre les liens */
-    padding: 15px 0; /* Espacement vertical */
-    background-color: transparent; /* La barre est transparente */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar li {
-    list-style: none; /* Enlever les puces de la liste */
+.navbar .logo {
+    height: 40px;
+    margin-right: auto; 
 }
 
-.navbar li a {
+.navbar .nav-links {
+    margin-left: auto; 
+}
+
+.navbar a {
+    color: white;
     text-decoration: none;
-    color: #2C3E50; /* Couleur du texte */
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: color 0.3s ease; /* Transition douce lors du survol */
+    margin: 0 15px;
+    font-size: 18px;
 }
 
-.navbar li a:hover {
-    color: #E74C3C; /* Changer la couleur au survol */
-}
-
-body {
-    margin: 0; /* Enlever les marges du body */
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; 
-    }
+.navbar a:hover {
+    text-decoration: underline;
 }
 
 /* Style pour le conteneur de connexion */
@@ -89,7 +86,7 @@ body {
     flex-direction: column;
 }
 
-/* Style pour les groupes d'entrée */
+
 .input-group {
     margin-bottom: 1rem;
 }
