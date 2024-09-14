@@ -7,7 +7,6 @@
 
 /* Style pour le body */
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
@@ -19,15 +18,6 @@ body {
 }
 
 /* Conteneur de la navigation */
-.link {
-    position: fixed;
-    top: 0;
-    right: 0;  
-    padding: 1rem;
-    z-index: 1000;
-}
-
-
 .navbar {
     position: fixed;
     top: 0;
@@ -37,6 +27,7 @@ body {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Ajouté pour espacer les éléments */
     padding: 10px 20px;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -44,11 +35,11 @@ body {
 
 .navbar .logo {
     height: 40px;
-    margin-right: auto; 
 }
 
 .navbar .nav-links {
-    margin-left: auto; 
+    display: flex;
+    align-items: center;
 }
 
 .navbar a {
@@ -62,6 +53,16 @@ body {
     text-decoration: underline;
 }
 
+/* Styles pour masquer les liens de navigation et afficher uniquement l'icône sur les petits écrans */
+@media (max-width: 768px) {
+    .navbar a:not(:last-child) {
+        display: none; /* Masquer les liens de navigation sauf le dernier (l'icône) */
+    }
+    .navbar .bx-menu {
+        display: block; /* Afficher l'icône de la barre latérale */
+    }
+}
+
 /* Style pour le conteneur de connexion */
 .login-container {
     background: #fff;
@@ -70,7 +71,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    position: relative;
+    margin-top: 80px; /* Ajusté pour éviter la superposition avec la navbar */
 }
 
 /* Style pour le titre */
@@ -85,7 +86,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 
 .input-group {
     margin-bottom: 1rem;
@@ -128,3 +128,18 @@ button:hover {
     vertical-align: middle;
 }
 
+/* Media queries pour ajustements supplémentaires sur les petits écrans */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    .input-group input {
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
